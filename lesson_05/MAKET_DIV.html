@@ -11,7 +11,17 @@
         margin: 0;
         bottom: 0;
     }
-    .back {}
+    .new {
+        background-image: url(./img/ball.png);
+        background-position: right;
+        background-repeat: repeat-y;
+    }
+    .back {
+        background-image: url(./img/color.png);
+        background-size: 220px;
+        background-repeat: repeat-y;
+        
+    }
     .header {
             width: 100%;
             height: auto;
@@ -22,23 +32,20 @@
             background-repeat: repeat-y;
         }
         .menu {
+           
             float: left;
-            width: 30%;
+            width: 220px;
             vertical-align: top;
         }
         .content {
+            padding-left: 20px;
             padding-top: 20px;
-            float: left;
-            background-image: url(./img/ball.png);
-            background-position: right;
-            background-repeat: repeat-y;
-            width: 70%;
+            margin-left: 200px;
+        
         }
         .size {
             padding: 20px;
-        }
-        .none {
-            clear: both;
+            
         }
         .footer {
             clear: both;
@@ -57,25 +64,34 @@
             float: left;
             margin-right: 10px;
         }
-        .back {
-            background-image: url(./img/color.png);
-            background-size: 30%;
-            background-repeat: repeat-y;
+       
+        p {
+            margin-left: 25px;
         }
 </style>
 <body>
     <div class="back">
+        <div class="new"> 
     <div class="header">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ !</div>
     <div class="menu">
-        <ul><b>Виды спорта:</b>
+        <p><b>Виды спорта:</b></p>
+        <ul>
             <li><a href="#">конькобежный спорт</a></li>
             <li><a href="#">биатлон</a></li>
             <li><a href="#">футбол</a></li>
             <li><a href="#">стрельба из лука</a></li>
             <li><a href="#">прыжки в длинну</a></li>
             <li><a href="#">прыжки в высоту</a></li>
+            <li><a href="#">конькобежный спорт</a></li>
+            <li><a href="#">биатлон</a></li>
+            <li><a href="#">футбол</a></li>
+            <li><a href="#">стрельба из лука</a></li>
+            <li><a href="#">прыжки в длинну</a></li>
+            <li><a href="#">прыжки в высоту</a></li>
+            
         </ul>
     </div>
+    <div>
     <div class="content"> <h2 id="name">ФУТБОЛ</h2>
         <br>
         <div class="size">
@@ -91,9 +107,10 @@
             хотя есть некоторые изменения для таких групп, как юниоры, взрослые, женщины и люди с ограниченными
             физическими возможностями. Законы очень часто формулировались в общих чертах, которые позволяют
             упростить их применения в зависимости от характера игры.
-        </div></div>
+    </div></div></div>
     <div class="footer">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</div>
     <div class="none"></div>
+</div>
 </div>
 </body>
 </html>
