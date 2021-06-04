@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<style>
+     *{
+        margin: 20px;
+     }
+    /* Добавил ссылкам рамку */
+     div a{                
+       display: inline-block; 
+       margin-right: 10px;
+       border-right: solid rgb(190, 31, 66) 3px;
+       padding-right: 30px;
+    }
+    div a:last-child {
+       border-right: none;
+    }
+   /* Добавил рамку ячейкам */
+    td{
+        margin-right: 10px;
+        border-right: solid brown 3px;
+        padding-right: 30px;
+    }
+    td:last-child {
+        border-right: none;
+    }
+    /* Добавил контейнер  */
+    p a{
+        display: inline-block;
+        margin-right: 10px;
+        padding-right: 30px;
+    }
+    p a:after{
+        content: url(pic.png);
+    }
+    p a:last-child::after{
+        content: none;
+    }
+    a:hover{
+        color: red;
+    }
+
+</style>
+<body>
+    <div><a href="#">первая ссылка</a> <a href="#">вторая ссылка</a> <a href="#">третья ссылка</a> <a href="#">четвертая ссылка</a> <a href="#">пятая ссылка</a></div>
+    <div>
+    <table>
+        <tr>
+        <td><a href="#">первая ссылка</a></td>
+        <td><a href="#">вторая ссылка</a></td>
+        <td><a href="#">третья ссылка</a></td>
+        <td><a href="#">четвертая ссылка</a></td>
+        <td><a href="#">пятая ссылка</a></td>
+    </tr>
+    </table>
+    </div> 
+    <p><a href="#">первая ссылка</a> <a href="#">вторая ссылка</a> <a href="#">третья ссылка</a> <a href="#">четвертая ссылка</a> <a href="#">пятая ссылка</a></p>
+
+</body>
+</html>
