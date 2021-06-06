@@ -7,43 +7,45 @@
     <title>Stars</title>
 </head>
 <style>
-    
-    div{
+    div.stars {
+        overflow: hidden;
+    }
+    div.star {
         float: left;
-        width: 100px;
-        height: 100px;
-        margin: 25px;
-        background-image: url(star1.png);
+        background-image: url(star0.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        
-    }
-    img{
         width: 100px;
         height: 100px;
     }
-    img:hover{
-        display: none;
+     div.stars:hover div.star {
         background-image: url(star1.png);
+        cursor: pointer;        
     }
+    div.star:hover ~ div.star{
+        background-image: url(star0.png);
+    } 
+   
 </style>
 <body>
-    
-<div>
-    <img src="star0.png" alt="star">
-</div>
-<div>
-    <img src="star0.png" alt="star">
-</div>
-<div>
-    <img src="star0.png" alt="star">
-</div>
-<div>
-    <img src="star0.png" alt="star">
-</div>
-<div>
-    <img src="star0.png" alt="star">
+<div class="stars">
+    <div class="star">
+    </div>
+    <div class="star">
+    </div>
+    <div class="star">
+    </div>
+    <div class="star">
+    </div>
+    <div class="star">
+    </div>
+    <div class="star">
+    </div>
+    <div class="star">
+    </div>
+    <div class="star">
+    </div>
 </div>
 </body>
 </html>
