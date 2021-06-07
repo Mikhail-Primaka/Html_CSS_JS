@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    bottom: 0;
+}
+.new {
+    background-image: url(./img/ball.png);
+    background-position: right;
+    background-repeat: repeat-y;
+}
+.back {
+    background-image: url(./img/color.png);
+    background-size: 220px;
+    background-repeat: repeat-y;
+    
+    
+}
+.header {
+        width: 100%;
+        height: auto;
+        color: blue;
+        font-size: 30px;
+        text-align: center;
+        background-color: rgb(118, 178, 228);
+        background-repeat: repeat-y;
+    }
+    .menu {
+        float: left;
+        width: 220px;
+        vertical-align: top;
+    }
+    .content {
+        padding-left: 20px;
+        padding-top: 20px;
+        margin-left: 200px;
+    
+    }
+    .size {
+        padding: 20px;
+        
+    }
+    .footer {
+        clear: both;
+        width: 100%;
+        height: auto;
+        color: blue;
+        font-size: 30px;
+        text-align: center;
+        background-color: rgb(118, 178, 228);
+    }
+    
+    #name {
+        text-align: center;
+    }
+    #pic {
+        float: left;
+        margin-right: 10px;
+    }
+   
+    p {
+        margin-left: 25px;
+    }
+    .none {
+        clear: both;
+    }
+    @media screen and (max-width: 500px){
+    .header,.footer{
+        display: none !important;
+    }
+    .menu {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+    }
+    .content {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }        
+    #pic {
+        width: 100%;            
+    }
+    ul li{
+        display: inline;
+        margin: 10px;
+    }
+    div .menu p {
+        display: none;
+    }
+   }
